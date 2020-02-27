@@ -10,7 +10,7 @@ on Linux x64 and ARM v7.
 The simplest way to build the images is to use `docker buildx` feature:
 
 ```bash
-docker buildx build -t 172.17.0.1:5000/ravendb --platform=linux/arm,linux/amd64 . --push
+docker buildx build -t haamutech/ravendb --platform=linux/arm,linux/amd64 . --push
 ```
 
-Both, Linux x64 and ARM v7, images are built in parallel and pushed into local registry running on host.
+Both, Linux x64 and ARM v7, images are built in parallel and pushed into [haamutech/ravendb](https://hub.docker.com/repository/docker/haamutech/ravendb) registry.
